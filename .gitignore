@@ -1,6 +1,8 @@
 # Dependencies
 node_modules
 bun.lock
+.next/
+out/
 
 # Python
 __pycache__/
