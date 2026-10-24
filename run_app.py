@@ -25,10 +25,10 @@ def main():
     print("==================================================")
     print("      🚀 Starting AI Career OS Platform           ")
     print("==================================================")
-    print(f"[Backend] Starting FastAPI gateway on http://127.0.0.1:8000 ...")
+    print(f"[Backend] Starting FastAPI gateway on http://127.0.0.1:8005 ...")
     
     backend_proc = subprocess.Popen(
-        [python_exe, "-m", "uvicorn", "backend.main:app", "--host", "127.0.0.1", "--port", "8000", "--reload"],
+        [python_exe, "-m", "uvicorn", "backend.main:app", "--host", "127.0.0.1", "--port", "8005", "--reload"],
         cwd=root_dir,
         env=env
     )

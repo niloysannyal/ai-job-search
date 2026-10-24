@@ -27,7 +27,7 @@ import {
   FileText
 } from "lucide-react";
 
-const API_BASE = "http://127.0.0.1:8000/api";
+const API_BASE = "http://127.0.0.1:8005/api";
 
 export default function CareerOS() {
   const [activeTab, setActiveTab] = useState<"dashboard" | "radar" | "studio" | "kanban" | "interview" | "profile">("dashboard");
@@ -72,7 +72,7 @@ export default function CareerOS() {
 
   const fetchHealth = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:8000/api/health");
+      const res = await fetch("http://127.0.0.1:8005/api/health");
       if (res.ok) {
         setBackendOnline(true);
       } else {
