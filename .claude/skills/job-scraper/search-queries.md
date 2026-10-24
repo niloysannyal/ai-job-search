@@ -1,90 +1,83 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
-
 ## Installed portal CLIs (primary for `/scrape`)
 
-`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; Danish demos and any skill you add with `/add-portal` are included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
+`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first.
+For Niloy Sannyal, the primary search tools are:
+- **`linkedin-search`**: Field-agnostic, country-agnostic. Runs searches for remote worldwide roles, Dhaka/Bangladesh local roles, and global tech hubs (US, UK, Germany, Canada, Singapore, Australia, Gulf).
+- **`freehire-search`**: Multi-market tech aggregator querying ~50 ATS platforms for software, data, ML, and engineering vacancies with `--remote` and skill-faceted flags.
+
+The Danish demo portals (`jobbank-search`, `jobdanmark-search`, `jobindex-search`, `jobnet-search`) remain installed and disabled by default unless targeting Denmark.
 
 The `site:` query templates in this file are the **WebSearch fallback** — for portals without a CLI, company career pages, or when a CLI fails.
 
-**Language scope:** write every query category in every language listed in your CLAUDE.md Languages table (typically 1-2, sometimes more). A posting requiring a language you have *not* declared, as a job condition, is excluded before scoring; a posting requiring a *higher level* than you declared in a language you *do* work in is flagged for your own judgment, not excluded — see `04-job-evaluation.md`'s Language Gate, the single source of truth for this rule. Translate each category's keywords rather than machine-translating word-for-word (e.g. "Frontend Developer" -> "Desarrollador Frontend", not a literal word-for-word translation) if you work in more than one language.
-
-## Search Sites
-
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
-
-Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
-
 ## Query Categories
 
-Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Queries are grouped by priority based on Niloy Sannyal's core expertise in production Agentic AI, LLM systems, RAG, and Machine Learning.
 
-**Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
+### Priority 1: AI Engineer & Agentic AI / LLM Systems (Core Direction)
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
-
-These match your strongest and most desired career direction.
+Matches strongest production background in enterprise agentic workflows, multi-provider LLM routing, and RAG.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
+site:linkedin.com/jobs "AI Engineer" "Remote"
+site:linkedin.com/jobs "AI Engineer" "Dhaka"
+site:linkedin.com/jobs "Agentic AI" OR "LLM Engineer" "Remote"
+site:linkedin.com/jobs "RAG" "FastAPI" "Python" "Remote"
+site:linkedin.com/jobs "AI Platform Engineer" "Remote"
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 2: Machine Learning Engineer & Data Scientist (Predictive Modeling & MLOps)
 
-These match your domain expertise.
-
-```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
-```
-
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
-
-Adjacent roles you could pivot into.
+Matches end-to-end ML pipelines, feature engineering, low-latency prediction APIs, and algorithmic rigor.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:linkedin.com/jobs "Machine Learning Engineer" "Remote"
+site:linkedin.com/jobs "ML Engineer" "Dhaka"
+site:linkedin.com/jobs "Data Scientist" "Remote"
+site:linkedin.com/jobs "MLOps Engineer" "Remote"
+site:linkedin.com/jobs "Computer Vision Engineer" "Python" "Remote"
 ```
 
-### Priority 4: Broader Technical / Consulting
+### Priority 3: Business Intelligence & Automation / Solutions
 
-Wider net for general technical roles.
+Matches experience in Odoo CRM integration, n8n automations, client consulting, and factory digitization.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "Business Intelligence Analyst" "Remote"
+site:linkedin.com/jobs "AI Solutions Architect" "Remote"
+site:linkedin.com/jobs "Automation Engineer" "Python" "Remote"
 ```
 
-## Location Filter
+### Priority 4: Robotics & IoT / Embedded Systems
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Adjacent hardware, sensor, and robotics background.
+
+```
+site:linkedin.com/jobs "Robotics Engineer" "Remote" OR "Dhaka"
+site:linkedin.com/jobs "IoT Engineer" "Python" OR "C++" "Remote"
+site:linkedin.com/jobs "Embedded Software Engineer" "Robotics"
+```
+
+## Location & Work Mode Filter
+
+- **Tier 1 (Ideal):** 100% Remote worldwide / Remote US / Remote EU / Remote APAC (async or standard overlap)
+- **Tier 2 (Ideal Local):** On-site / Hybrid in Dhaka, Bangladesh (min 45,000 BDT/month, target 75,000+ BDT/month)
+- **Tier 3 (Relocation):** Worldwide on-site in US, UK, Germany, Canada, Australia, EU, Singapore, Gulf **ONLY IF** visa sponsorship and relocation assistance are explicitly provided (target 100k - 250k USD/year)
+- **Unacceptable (Deal-breaker):** On-site or hybrid outside Bangladesh without visa sponsorship
 
 ## Language Filter
 
-Your working languages and levels are in CLAUDE.md's Languages table. When filtering scraped results, apply `04-job-evaluation.md`'s Language Gate: a posting requiring a language you haven't declared at all is excluded; a posting requiring a higher level than you declared in a language you do work in is not excluded, flag it clearly instead (see `job-scraper/SKILL.md`'s Step 3 "Quick Fit Assessment" for how the flag surfaces in `/scrape` output). Postings simply *written* in a language you don't work in, that don't require it on the job, are fine.
+- **Declared languages:** Bengali (Native), English (Professional working proficiency), Hindi (Conversational).
+- **Rule:** A posting requiring an undeclared language (e.g. German, Japanese, French) as a mandatory job condition is excluded before scoring. Postings requiring professional English or Bengali pass cleanly.
 
 ## Date Filter
 
-Only include jobs posted within the last 14 days, or with an application deadline that has not yet passed. If a posting date cannot be determined, include it but flag as "date unknown".
+Only include jobs posted within the last 14 days, or with an open application deadline.
 
 ## Adapting Queries
 
-If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+When running `/scrape <focus_area>`, prioritize that category:
+- `/scrape agentic` -> Focus on Agentic AI, LLM chains, LangGraph, tool use
+- `/scrape data science` -> Focus on Data Science, ML models, predictive analytics
+- `/scrape dhaka` -> Focus on on-site and hybrid roles in Dhaka, Bangladesh

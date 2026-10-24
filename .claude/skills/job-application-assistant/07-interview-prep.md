@@ -14,30 +14,33 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+### 1. Betopia Sales Agent (Multi-Provider Agentic AI & CRM Integration)
+**S:** Betopia Group needed an autonomous sales intelligence system for 600+ sales agents embedded directly into their Odoo CRM, but relying on a single LLM provider created uptime vulnerabilities and token rate-limit risks.
+**T:** As sole architect, design and ship an agentic assistant capable of psychological client profiling, conversation-stage detection, and lead-closing recommendations with high availability.
+**A:** Built a dynamic multi-provider LLM chain routing between OpenAI, Anthropic, and Gemini with automatic slot failover. Implemented Redis AOF for persistent conversation states, FastAPI async endpoints, and a Next.js 15 administrative control panel.
+**R:** Successfully deployed to 600+ sales agents across Betopia Group, maintaining high uptime, sub-second routing, and real-time observability for executive leadership.
+**Use for:** "Tell me about a complex system you architected from scratch", "How do you handle reliability and third-party API failovers?", "Tell me about building with Agentic AI."
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Enterprise RAG on Qdrant (Low-Latency Retrieval & Context Injection)
+**S:** Sales agents were generating proposals inconsistently, missing historical high-converting sales phrasing and approved proposal templates.
+**T:** Build a production-grade semantic search and retrieval layer to inject context-aware historical proposal templates into live model prompts.
+**A:** Designed and deployed a vector RAG pipeline on Qdrant. Embedded and indexed historical sales conversations and Fiverr proposal templates. Optimized collection schemas, backup/restore scripts on Linux VPS, and integrated async similarity search directly into the FastAPI pipeline.
+**R:** Empowered agents to draft tailored, high-converting client responses in seconds, significantly accelerating lead response times and proposal consistency.
+**Use for:** "Describe your experience building production RAG systems", "How do you optimize vector databases for low latency?", "How do you manage Linux/VPS production infrastructure?"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. HA-MEEM Group Factory Digitization (Client Consulting & Technical Leadership)
+**S:** HA-MEEM Group (a major RMG manufacturer) had disparate, manual factory-floor operations across inventory, washing recipes, fabric QC, cutting, and management reporting.
+**T:** Lead an external technical consulting engagement to scope, analyze, and architect a five-module factory digitization system.
+**A:** Met directly with plant managers and operations leaders to extract domain constraints. Scoped 5 operational modules (inventory & needle tracking, wash recipe control, shade/shrinkage fabric QC, cutting & waste management, master admin dashboard) and authored client-ready technical architecture diagrams.
+**R:** Produced full system blueprints and data flow pipelines that established clear technical milestones for factory floor automation.
+**Use for:** "Tell me about a time you worked with non-technical clients", "How do you translate ambiguous business requirements into system architecture?", "Demonstrate technical leadership."
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
-
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 4. Full Send Sports AI -- UFC Prediction Platform (End-to-End MLOps & Production Latency)
+**S:** Needed a real-time, low-latency predictive service to forecast outcomes of UFC fights based on deep fighter historical stats.
+**T:** Build an end-to-end ML pipeline with high predictive accuracy, trained on 10,000+ fights, and serve real-time predictions with sub-100ms response time.
+**A:** Engineered 80+ features capturing rolling fighter stats, strike efficiency, and fight conditions. Trained and tuned ensemble models (XGBoost, LightGBM, Scikit-learn), wrapped inference in an async FastAPI service, and deployed the production backend on AWS with Docker.
+**R:** Platform launched live on the iOS App Store, serving live production traffic with sub-100ms inference latency.
+**Use for:** "Tell me about an end-to-end ML project you shipped", "How do you approach feature engineering for tabular/event data?", "How do you optimize model latency?"
 
 ## Common Tough Questions
 

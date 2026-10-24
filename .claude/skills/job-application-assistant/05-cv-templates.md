@@ -59,7 +59,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Niloy Sannyal - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -69,13 +69,11 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\name{Niloy}{Sannyal}
+\address{Dhaka}{Bangladesh}{}
+\phone[mobile]{+8801783445245}
+\email{niloysannyal@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/niloysannyal/}{LinkedIn}, \href{https://github.com/niloysannyal}{GitHub}, \href{https://www.niloysannyal.me/}{Portfolio}}
 
 \begin{document}
 \makecvtitle
@@ -136,12 +134,11 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For AI Engineer / Agentic AI roles:**
+> AI Engineer specializing in production Agentic AI, LLM systems, and RAG architectures, with proven experience architecting enterprise systems deployed to 600+ users. Backed by multi-provider LLM routing (OpenAI, Anthropic, Gemini), low-latency vector search (Qdrant), and full-stack operational ownership from FastAPI backends to Dockerized VPS administration.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For ML Engineer / Data Scientist roles:**
+> Machine Learning Engineer with deep algorithmic foundations (530+ competitive programming solutions) and practical delivery of high-accuracy predictive pipelines (95%+ accuracy, sub-100ms inference). Experienced in end-to-end MLOps, cross-validation, feature engineering, and deploying production models on cloud and containerized infrastructure.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

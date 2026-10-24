@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Niloy Sannyal
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. The AI assistant acts as a career advisor and application assistant for Niloy Sannyal, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +10,96 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Niloy Sannyal
+- **Location:** Dhaka, Bangladesh (Open to local on-site in Dhaka, 100% remote worldwide, and global relocation with visa sponsorship)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | Bengali | Native |
+  | English | Professional working proficiency |
+  | Hindi | Conversational |
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Employed (AI Engineer at Betopia Limited)
+- **LinkedIn headline:** "AI Engineer | Agentic AI | LLM Systems | RAG | Full-Stack ML"
+- **Contact:**
+  - Email: niloysannyal@gmail.com
+  - Phone: +8801783445245
+  - Portfolio: https://www.niloysannyal.me/
+  - LinkedIn: https://www.linkedin.com/in/niloysannyal/
+  - GitHub: https://github.com/niloysannyal
+  - LeetCode: https://leetcode.com/NiloySannyal/
+  - Codeforces: https://codeforces.com/profile/niloy_sannyal
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **B.Sc. in Information and Communication Engineering** (Jan 2019 - Oct 2024) - University of Rajshahi, Rajshahi, Bangladesh
+  - Topics: Computer Science Fundamentals, Data Structures & Algorithms, OOP, Machine Learning, Digital Communication, Signals & Systems
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **AI Engineer** (Apr 2026 - Present) - **Betopia Limited -- Betopia Group** (Dhaka, Bangladesh)
+  - Architected and own **Betopia Sales Agent**, an enterprise Agentic AI system embedded in **Odoo CRM**, serving **600+ salespersons** with psychological client profiling, conversation-stage detection, and autonomous lead-closing logic.
+  - Designed a **multi-provider LLM chain** (OpenAI, Anthropic, Gemini) with dynamic provider-slot routing, automatic failover, and Redis AOF-backed state persistence.
+  - Built a production **RAG pipeline** on **Qdrant** with semantic search over proposal templates and historical sales conversations for context-aware response generation.
+  - Delivered a **Next.js 15** admin dashboard for real-time sales monitoring, LLM chain configuration, and system health observability.
+  - Established **CI/CD pipelines** (GitHub Actions) with automated testing/deployment gates; applied MLOps practices including model versioning, async I/O optimization, and latency monitoring.
+  - Owned system end-to-end with direct accountability for uptime and reliability; perform ongoing **VPS and server administration** for the production Dockerized stack (FastAPI, Odoo, frontend, Postgres, Redis, Qdrant).
+  - Independently lead parallel **factory digitization consulting engagement** for HA-MEEM Group (RMG manufacturing), scoping five operational modules (inventory, QC, cutting/waste, recipe control, admin reporting).
+
+- **AI Developer** (Nov 2025 - Mar 2026) - **Softvence Agency -- Betopia Group** (Dhaka, Bangladesh)
+  - Built and deployed **production-grade AI APIs** using FastAPI with sub-100ms inference latency for real-time ML prediction endpoints.
+  - Implemented **RAG pipelines** with vector databases for semantic search and context-aware responses; integrated OpenAI/Anthropic APIs with structured prompting.
+  - Developed ML pipelines with advanced feature engineering, class-imbalance handling (SMOTE, class weights), and rigorous cross-validation.
+  - Designed **n8n automation workflows** to orchestrate AI services, external APIs, and data pipelines for client operations.
+  - Deployed AI services using **Docker and AWS (EC2, S3)** with automated, repeatable deployment workflows meeting production SLAs.
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Python, Agentic AI, LLM Systems (OpenAI, Anthropic, Gemini), RAG (Qdrant, Vector Search), FastAPI, REST APIs, Next.js 15, Redis, PostgreSQL, Docker
+- **Secondary:** LangChain, LangGraph, Scikit-learn, TensorFlow (Keras), XGBoost, LightGBM, JavaScript / TypeScript, C++, SQL, Odoo CRM, n8n, AWS (EC2, S3), GitHub Actions (CI/CD)
+- **Domain:** Enterprise CRM Agentic AI, Factory Digitization (RMG manufacturing), Sports AI Prediction, Computer Vision (Plant Disease), Conversational AI, Robotics & Embedded IoT
+- **Software & Tools:** Linux/VPS Administration, Git, MySQL, SQLite, FAISS, Streamlit, Pandas, NumPy, Vite, Tailwind CSS, Vercel, Render
+
+### Problem Solving & CS Fundamentals
+- **530+ algorithmic problems solved:** 350+ on LeetCode, 200+ competitive programming problems on Codeforces. Strong foundations in DSA, OOP, SDLC, and System Design.
+
+### Key Projects
+- **Betopia Sales Agent:** Enterprise Agentic CRM Assistant for 600+ salespersons (FastAPI, Odoo, Redis, Qdrant, Next.js 15, Multi-LLM).
+- **HA-MEEM Group Digitization:** 5-module manufacturing digitization program and architecture.
+- **FIFA World Cup 2026 Forecast:** Football forecasting platform on 32,247 matches with Elo rating & real-time simulation (Python, Scikit-learn, FastAPI, React, Vite, SQLite, AWS).
+- **BioVue Digital Wellness:** Generative AI health projections across 6m/1y/5y horizons using Google Vertex AI.
+- **Full Send Sports AI:** UFC prediction ML platform on 10,000+ fights, 80+ features, sub-100ms latency, live on iOS App Store.
+- **Dhaka Home Rent Prediction:** 28,000+ listings, Random Forest 95%+ accuracy, Flask, Render.
+- **Crop Disease Classifier:** CNN plant leaf disease classifier on thousands of images, 97% accuracy (TensorFlow, Keras, Streamlit).
+- **Robotics (Robo-Car & 4-Channel RC Plane):** Arduino, C++, ESP32-CAM, RF aerodynamic design.
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
-
-### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
-
-### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- **Data Science Full Course** - Codebasics
+- **Natural Language Processing Full Course** - Codebasics
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Autonomy & Ownership:** Sole architect and builder for complex production systems; takes complete ownership from requirement scoping to server deployment and monitoring.
+- **Rapid Learning & Self-Onboarding:** Quickly learns and productionizes unfamiliar stacks (e.g. mastering Odoo, Qdrant, Redis, Next.js 15 on the job).
+- **Client & Cross-Functional Versatility:** Comfortable translating client business requirements (e.g., factory floors, sales teams) into concrete technical architecture and documentation.
+- **Strengths:** High engineering velocity, pragmatic architecture, end-to-end full-stack capabilities (AI + Backend + Frontend + DevOps).
+- **Growth areas:** Thrives when given technical ownership and high impact; dislikes bureaucratic or purely siloed maintenance environments.
+- **Thrives in:** Agile, high-impact teams building production AI systems and scalable agentic products.
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building and deploying production-grade Agentic AI and LLM workflows that generate tangible business value
+- Designing resilient, multi-provider, context-aware AI architectures with low latency
+- Tackling challenging algorithmic, data, and system design problems
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- **AI & LLM Platforms / Startups:** Foundational model applications, agentic tools, AI platforms
+- **Enterprise Software & Automation:** CRM automation, ERP systems, intelligent workflows
+- **Data Science & ML Engineering:** Predictive analytics, sports analytics, computer vision
+- **Robotics & IoT / Embedded Systems:** Smart automation, connected hardware
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- **Remote / Relocation:** On-site roles outside Bangladesh must provide visa sponsorship and relocation assistance; otherwise roles must be 100% remote.
+- **Compensation:**
+  - In Bangladesh: Minimum 45,000 BDT/month (Target: 75,000+ BDT/month).
+  - Outside Bangladesh / International: Minimum 100,000 USD/year (Target: 100k - 250k USD/year).
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
@@ -141,7 +155,7 @@ Both documents MUST be compiled and visually inspected via the Read tool on the 
 
 ### ATS & keyword verification (CV)
 ATS parsers read the PDF's embedded text layer, not the rendered page. Extract it with `python3 tools/verify_pdf.py cv/main_<company>_<role>.pdf --dump-text cv/main_<company>_<role>.txt` (pypdf, then `pdftotext -layout -enc UTF-8`) and verify what a parser sees. If both extractors are missing, skip the parseability items with a warning and check keyword coverage from the visual PDF read instead.
-- [ ] CV text layer extracts cleanly - no `(cid:*)` markers, `�` replacement characters, or text visible in the PDF but absent from the extraction
+- [ ] CV text layer extracts cleanly - no `(cid:*)` markers, `` replacement characters, or text visible in the PDF but absent from the extraction
 - [ ] Email and phone appear as **literal text** in the extraction (icon-glyph noise like `MOBILE-ALT`/`Envelope` is harmless, but a contact detail carried only by an icon or hyperlink is invisible to ATS)
 - [ ] Reading order of the extracted text matches the visual order (single-column stock template is safe; multi-column custom templates are where this breaks)
 - [ ] Posting keywords covered or honestly absent - synonym-only matches tightened to the posting's exact term where truthfully applicable, keywords the profile genuinely supports added to experience bullets, genuine gaps left visible and **never stuffed**
